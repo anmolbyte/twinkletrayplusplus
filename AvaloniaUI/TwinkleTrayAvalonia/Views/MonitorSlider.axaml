@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="100"
+             x:Class="TwinkleTrayAvalonia.Views.MonitorSlider">
+  <Border Padding="15">
+    <StackPanel Spacing="5">
+      <TextBlock Name="MonitorNameLabel" Text="Monitor Name" FontSize="14" FontWeight="SemiBold" Foreground="White"/>
+      <Grid ColumnDefinitions="*, 60">
+        <Slider Name="BrightnessSlider" Minimum="0" Maximum="100" Value="50" VerticalAlignment="Center"/>
+        <NumericUpDown Grid.Column="1" Name="BrightnessValue" Minimum="0" Maximum="100" Value="50" Margin="10,0,0,0" ShowButtonSpinner="False"/>
+      </Grid>
+    </StackPanel>
+  </Border>
+</UserControl>

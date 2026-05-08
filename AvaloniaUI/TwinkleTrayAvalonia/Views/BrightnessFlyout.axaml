@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="350" d:DesignHeight="450"
+        x:Class="TwinkleTrayAvalonia.Views.BrightnessFlyout"
+        Title="Twinkle Tray"
+        Width="350" Height="450"
+        WindowStartupLocation="Manual"
+        WindowDecorations="None"
+        Topmost="True"
+        Background="#CC1F1F1F"
+        TransparencyLevelHint="AcrylicBlur"
+        ExtendClientAreaToDecorationsHint="True">
+  <Border CornerRadius="8" BorderBrush="#444" BorderThickness="1" Background="#CC1F1F1F" ClipToBounds="True">
+    <DockPanel>
+      <Border DockPanel.Dock="Bottom" Height="40" Background="#222" Padding="10,0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+          <Button Content="⚙" Background="Transparent" BorderThickness="0" Foreground="White" Click="OnSettingsClick"/>
+        </StackPanel>
+      </Border>
+      <ScrollViewer>
+        <Border Padding="10">
+          <StackPanel Name="MonitorList" Spacing="10"/>
+        </Border>
+      </ScrollViewer>
+    </DockPanel>
+  </Border>
+</Window>
